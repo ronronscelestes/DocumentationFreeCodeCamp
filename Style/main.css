@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Kommon Grotesk Compressed';
+    src: url(../Fonts/Kommon\ Grotesk\ Com\ Light.otf) format('Opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Kommon Grotesk Compressed';
+    src: url(../Fonts/Kommon\ Grotesk\ Com\ Medium.otf) format('Opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url(../Fonts/Recoleta\ Medium.otf) format('Opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url(../Fonts/Recoleta\ Regular.otf) format('Opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Tusker Grotesk';
+    src: url(../Fonts/Tusker_Grotesk_4500_Medium.ttf) format('Opentype');
+    font-weight: 500;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(255, 241, 230, 1);
+    font-family: Kommon Grotesk Compressed;
+    font-weight: 300;
+}
+
+/* Picture header + title + br */
+
+.header-container {
+    position: relative;
+    width: 100vw;
+    height: 379px;
+    overflow: hidden;
+}
+
+.header-picture {
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 95%;
+    max-width: 1100px;
+    min-width: 773px;
+}
+
+.title-svg {
+    max-width: 758px;
+    transform: translateY(-80px);
+    margin: 0 auto;
+}
+
+.svg {
+    width: 100%;
+    padding: 0 1em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(203, 153, 126, 1), rgba(0, 0, 0, 0));
+    margin-bottom: 160px;
+}
+
+/* Wrapper documentation sizing/position */
+
+.wrapper-documentation {
+    position: relative;
+    max-width: 976px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* Sidebar */
+
+.sidebar {
+    position: sticky;
+    top: 50px;
+    min-width: 208px;
+    margin: 0 48px 0 32px;
+    align-self: flex-start;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.sidebar-big {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Recoleta;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.35em;
+}
+
+.sidebar-small {
+    color: rgba(83, 68, 60, 0.7);
+    font-family: Recoleta;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.37em;
+    padding-left: 8px;
+}
