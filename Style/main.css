@@ -80,7 +80,7 @@ hr {
 
 .wrapper-documentation {
     position: relative;
-    max-width: 976px;
+    max-width: 1040px;
     margin: 0 auto;
     display: flex;
 }
@@ -89,7 +89,7 @@ hr {
 
 .sidebar {
     position: sticky;
-    top: 50px;
+    top: 24px;
     min-width: 208px;
     margin: 0 48px 0 32px;
     align-self: flex-start;
@@ -102,18 +102,108 @@ hr {
 }
 
 .sidebar-big {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(23, 19, 18, 0.7);
     font-family: Recoleta;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.35em;
+    transition: color ease 0.15s;
+}
+
+.sidebar-big:hover {
+    color: rgba(23, 19, 18, 1);
 }
 
 .sidebar-small {
-    color: rgba(83, 68, 60, 0.7);
+    color: rgba(95, 78, 68, 0.7);
     font-family: Recoleta;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.37em;
     padding-left: 8px;
+    transition: color ease 0.15s;
+}
+
+.sidebar-small:hover {
+    color: rgba(95, 78, 68, 1);
+}
+
+/* right side typo/color/margin */
+
+.right-side {
+    margin-right: 32px;
+}
+
+.title1 {
+    font-family: 'Recoleta';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.35em;    
+    text-transform: uppercase;
+    color: #B7B7A4;
+    margin-bottom: 40px;
+}
+
+.title2 {
+    font-family: 'Tusker Grotesk';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.45em;
+    letter-spacing: -0.03em;
+    color: rgba(23, 19, 18, 0.8);
+    margin-bottom: 40px;
+}
+
+.content {
+    font-size: 24px;
+    line-height: 1.4em;
+    color: rgba(95, 78, 68, 1);
+    margin-bottom: 40px;
+}
+
+.content:last-child {
+    margin-bottom: 0;
+}
+
+.right-side-container {
+    margin-bottom: 64px;
+}
+
+/* styling herbs parts */
+.title-plant {
+    margin-bottom: 8px;
+}
+
+.plant-pictures-intro {
+    margin-bottom: 80px;
+}
+
+.plant-picture {
+    max-width: 316px;
+    float: left;
+    shape-outside: circle(50%);
+    margin-right: 45px;
+}
+
+.flex-column {
+    display: flex;
+}
+
+.flex-left {
+    flex-basis: 336px;
+    margin-right: 48px;
+}
+
+.flex-right {
+    flex-basis: 336px;
+}
+
+.title3 {
+    font-family: 'Kommon Grotesk Compressed';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16em;
+    letter-spacing: -0.03em;
+    color: rgba(83, 68, 60, 0.7);
+    margin-bottom: 8px;
 }
