@@ -34,6 +34,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgba(255, 241, 230, 1);
     font-family: Kommon Grotesk Compressed;
@@ -76,6 +80,12 @@ hr {
     margin-bottom: 160px;
 }
 
+@media screen and (max-width: 660px) {
+    hr {
+        margin-bottom: 0;
+    }
+}
+
 /* Wrapper documentation sizing/position */
 
 .wrapper-documentation {
@@ -85,7 +95,16 @@ hr {
     display: flex;
 }
 
+@media screen and (max-width: 660px) {
+    .wrapper-documentation {
+        flex-direction: column;
+    }
+}
+
 /* Sidebar */
+.hamburger {
+    /* display: none; */
+}
 
 .sidebar {
     position: sticky;
@@ -128,6 +147,54 @@ hr {
     color: rgba(95, 78, 68, 1);
 }
 
+@media screen and (max-width: 660px) {
+    .hamburger {
+        position: sticky;
+        top: 24px;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    }
+
+    .hamburger-content {
+        font-family: Kommon Grotesk Compressed;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.15em;
+        letter-spacing: -0.03em;
+        color: rgba(83, 68, 60, 0.7);
+        margin: 0 auto;
+        padding: 16px 0;
+        width: 200px;
+        position: relative;
+    }
+
+    .hamburger-content::after {
+        content: '';
+        width: 0; 
+        height: 0; 
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid rgba(83, 68, 60, 0.7);
+        position: absolute;
+        top: 25px;
+        right: 0;
+
+    }
+    
+    .sidebar {
+        position: absolute;
+        text-align: center;
+        background-color: red;
+        width: 100%;
+        margin: 0;
+        top: 0;
+        background: rgba(255, 241, 230, 1);
+        display: none;
+    }
+}
+
 /* right side typo/color/margin */
 
 .right-side {
@@ -154,6 +221,16 @@ hr {
     margin-bottom: 40px;
 }
 
+.title3 {
+    font-family: 'Kommon Grotesk Compressed';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16em;
+    letter-spacing: -0.03em;
+    color: rgba(83, 68, 60, 0.7);
+    margin-bottom: 8px;
+}
+
 .content {
     font-size: 24px;
     line-height: 1.4em;
@@ -169,7 +246,15 @@ hr {
     margin-bottom: 64px;
 }
 
+@media screen and (max-width: 660px) {
+    .right-side {
+        margin: 0 32px
+    }
+}
+
+
 /* styling herbs parts */
+
 .title-plant {
     margin-bottom: 8px;
 }
@@ -198,12 +283,30 @@ hr {
     flex-basis: 336px;
 }
 
-.title3 {
-    font-family: 'Kommon Grotesk Compressed';
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.16em;
-    letter-spacing: -0.03em;
-    color: rgba(83, 68, 60, 0.7);
-    margin-bottom: 8px;
+@media screen and (max-width: 1040px) {
+    .plant-picture {
+        float: none;
+        align-self: center;
+        margin-bottom: 25px;
+    }
+
+    .plant-pictures-intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-plant {
+        margin-bottom: 17px;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+}
+
+
+/* bibliographie */
+
+.book-title {
+    margin-bottom: 16px;
 }
