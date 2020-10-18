@@ -353,3 +353,8 @@ input {
     line-height: 34px;
     color: rgba(95, 78, 68, 0.8);
 }
+
+.hugocredits {
+    text-decoration: none;
+    color: rgba(95, 78, 68, 0.8);
+}
